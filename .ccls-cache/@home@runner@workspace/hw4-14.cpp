@@ -27,10 +27,10 @@ int main() {
   //calculate the total
   total = small + medium + large + family;
   //calculate the percentages
-  smallPercent = small / static_cast25<double>(total) * 100;
-  mediumPercent = medium / static_cast<double>(total) * 100;
-  largePercent = large / static_cast<double>(total) * 100;
-  familyPercent = family / static_cast<double>(total) * 100;
+smallPercent = static_cast<double>(small) / total * 100;
+mediumPercent = static_cast<double>(medium) / total * 100;
+largePercent = static_cast<double>(large) / total * 100;
+familyPercent = static_cast<double>(family) / total * 100;
   //display the total and percentages
   cout << "Total: " << total << endl;
   cout << "Small: " << smallPercent << "%" << endl;
